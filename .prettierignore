@@ -1,0 +1,8 @@
+node_modules
+.yarn
+dist
+build
+ios
+android
+.DS_Store
+*.log

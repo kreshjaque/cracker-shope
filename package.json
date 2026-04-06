@@ -8,6 +8,15 @@
   ],
   "scripts": {
     "web": "yarn workspace web dev",
-    "mobile": "yarn workspace mobile start"
+    "mobile": "yarn workspace mobile start",
+    "android": "yarn workspace mobile android",
+    "ios": "yarn workspace mobile ios",
+    "lint:web": "yarn workspace web lint",
+    "lint:mobile": "yarn workspace mobile lint",
+    "lint": "yarn lint:web && yarn lint:mobile",
+    "test:web": "yarn workspace web test",
+    "test:mobile": "yarn workspace mobile test",
+    "test": "yarn test:web && yarn test:mobile",
+    "format": "prettier --write ."
   }
 }
