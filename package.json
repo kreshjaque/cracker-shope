@@ -3,7 +3,11 @@
   "packageManager": "yarn@4.13.0",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "apps/*"
-  ]
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "yarn workspace web dev",
+    "mobile": "yarn workspace mobile start"
+  }
 }

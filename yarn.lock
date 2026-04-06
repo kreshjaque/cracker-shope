@@ -2988,35 +2988,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"MobileApp@workspace:apps/mobile-app":
-  version: 0.0.0-use.local
-  resolution: "MobileApp@workspace:apps/mobile-app"
-  dependencies:
-    "@babel/core": "npm:^7.25.2"
-    "@babel/preset-env": "npm:^7.25.3"
-    "@babel/runtime": "npm:^7.25.0"
-    "@react-native-community/cli": "npm:20.1.0"
-    "@react-native-community/cli-platform-android": "npm:20.1.0"
-    "@react-native-community/cli-platform-ios": "npm:20.1.0"
-    "@react-native/babel-preset": "npm:0.84.1"
-    "@react-native/eslint-config": "npm:0.84.1"
-    "@react-native/metro-config": "npm:0.84.1"
-    "@react-native/new-app-screen": "npm:0.84.1"
-    "@react-native/typescript-config": "npm:0.84.1"
-    "@types/jest": "npm:^29.5.13"
-    "@types/react": "npm:^19.2.0"
-    "@types/react-test-renderer": "npm:^19.1.0"
-    eslint: "npm:^8.19.0"
-    jest: "npm:^29.6.3"
-    prettier: "npm:2.8.8"
-    react: "npm:19.2.3"
-    react-native: "npm:0.84.1"
-    react-native-safe-area-context: "npm:^5.5.2"
-    react-test-renderer: "npm:19.2.3"
-    typescript: "npm:^5.8.3"
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:^4.0.0":
   version: 4.0.0
   resolution: "abbrev@npm:4.0.0"
@@ -7328,6 +7299,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mobile@workspace:apps/mobile":
+  version: 0.0.0-use.local
+  resolution: "mobile@workspace:apps/mobile"
+  dependencies:
+    "@babel/core": "npm:^7.25.2"
+    "@babel/preset-env": "npm:^7.25.3"
+    "@babel/runtime": "npm:^7.25.0"
+    "@react-native-community/cli": "npm:20.1.0"
+    "@react-native-community/cli-platform-android": "npm:20.1.0"
+    "@react-native-community/cli-platform-ios": "npm:20.1.0"
+    "@react-native/babel-preset": "npm:0.84.1"
+    "@react-native/eslint-config": "npm:0.84.1"
+    "@react-native/metro-config": "npm:0.84.1"
+    "@react-native/new-app-screen": "npm:0.84.1"
+    "@react-native/typescript-config": "npm:0.84.1"
+    "@types/jest": "npm:^29.5.13"
+    "@types/react": "npm:^19.2.0"
+    "@types/react-test-renderer": "npm:^19.1.0"
+    eslint: "npm:^8.19.0"
+    jest: "npm:^29.6.3"
+    prettier: "npm:2.8.8"
+    react: "npm:19.2.3"
+    react-native: "npm:0.84.1"
+    react-native-safe-area-context: "npm:^5.5.2"
+    react-test-renderer: "npm:19.2.3"
+    typescript: "npm:^5.8.3"
+  languageName: unknown
+  linkType: soft
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -9421,9 +9421,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-app@workspace:apps/web-app":
+"web@workspace:apps/web":
   version: 0.0.0-use.local
-  resolution: "web-app@workspace:apps/web-app"
+  resolution: "web@workspace:apps/web"
   dependencies:
     "@eslint/js": "npm:^9.39.4"
     "@types/node": "npm:^24.12.2"
