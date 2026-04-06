@@ -8,7 +8,13 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/src/__mocks__/fileMock.js',
   },
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(ts|tsx)$': [
+      'ts-jest',
+      {
+        tsconfig: { jsx: 'react-jsx' },
+        isolatedModules: true,
+      },
+    ],
   },
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };
