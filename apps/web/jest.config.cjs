@@ -11,8 +11,13 @@ module.exports = {
     '^.+\\.(ts|tsx)$': [
       'ts-jest',
       {
-        tsconfig: { jsx: 'react-jsx' },
-        isolatedModules: true,
+        tsconfig: {
+          jsx: 'react-jsx',
+          moduleResolution: 'bundler',
+          ignoreDeprecations: '6.0',
+          isolatedModules: true,
+          esModuleInterop: true,
+        },
       },
     ],
   },

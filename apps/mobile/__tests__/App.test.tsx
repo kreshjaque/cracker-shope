@@ -11,13 +11,15 @@ jest.mock('react-native-safe-area-context', () => {
   return {
     ...jest.requireActual('react-native-safe-area-context'),
     SafeAreaProvider: jest.fn().mockImplementation(({ children }) => children),
-    SafeAreaConsumer: jest.fn().mockImplementation(({ children }) => children(inset)),
+    SafeAreaView: jest.fn().mockImplementation(({ children }) => children),
     useSafeAreaInsets: jest.fn().mockImplementation(() => inset),
     useSafeAreaFrame: jest.fn().mockImplementation(() => ({ x: 0, y: 0, width: 390, height: 844 })),
   };
 });
 
-test('renders welcome message', () => {
+test('renders customer and admin entry points', () => {
   const { getByText } = render(<App />);
-  expect(getByText('Welcome to Cracker Shope!')).toBeTruthy();
+  expect(getByText('Cracker Shope')).toBeTruthy();
+  expect(getByText('Diwali collection')).toBeTruthy();
+  expect(getByText('Admin')).toBeTruthy();
 });
